@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,200&family=Poppins:wght@300;400&family=Roboto:wght@100;300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  font-family: "Roboto";
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(18, 18, 20);
+  min-height: 100vh;
+}
+main .container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  max-width: 1000px;
+  padding: 50px;
+}
+@media (max-width: 786px) {
+  main .container {
+    flex-direction: column;
+  }
+}
+main .container .conteudo {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 456px;
+  height: 250px;
+}
+@media (max-width: 786px) {
+  main .container .conteudo {
+    margin-left: 10px;
+    width: 480px;
+    height: 255px;
+  }
+}
+main .container .conteudo .logo {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  margin: 0px 0px 66px;
+}
+main .container .conteudo .logo img {
+  height: 37px;
+  width: 192px;
+}
+main .container .conteudo h1 {
+  margin-bottom: 24px;
+  color: rgb(225, 225, 230);
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 64px;
+}
+main .container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 474px;
+  max-width: 480px;
+  border-radius: 6px;
+  background: rgb(32, 32, 36);
+  padding: 64px;
+}
+main .container form .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #fff;
+}
+main .container form .inputs input {
+  width: 100%;
+  height: 50px;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 40px;
+  background: rgb(18, 18, 20);
+  border: 2px solid rgb(18, 18, 20);
+}
+main .container form .inputs .email-label {
+  position: relative;
+  color: #fff;
+}
+main .container form .inputs .email-label svg {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  height: 1em;
+  width: 1em;
+  transform: translateY(-50%);
+  fill: grey;
+  opacity: 20%;
+  font-size: 14px;
+}
+main .container form .inputs .password-label {
+  position: relative;
+}
+main .container form .inputs .password-label svg {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  height: 1em;
+  width: 1em;
+  transform: translateY(-50%);
+  fill: grey;
+  opacity: 20%;
+}
+main .container form .alter {
+  align-self: flex-start;
+  text-decoration: none;
+  color: rgb(130, 87, 229);
+  opacity: 0.8;
+  margin: 10px 2px;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main .container form .btn {
+  height: 50px;
+  background: rgb(102, 66, 186);
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 10px;
+  cursor: default;
+}
+main .container form .btn-disabled {
+  color: rgba(255, 255, 255, 0.35);
+  background: rgb(65, 53, 107);
+  cursor: default;
+}
+main .container form .alternativo {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto";
+  margin-top: 20px;
+}
+main .container form .alternativo a {
+  text-decoration: none;
+  color: rgb(130, 87, 229);
+  transition: opacity 0.2s ease 0s;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.8;
+}
+main .container form .alternativo a:hover {
+  color: #fff;
+}
+main .container form .blank {
+  position: relative;
+  margin: 24px 0px;
+}
+main .container form .blank:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  width: 151px;
+  height: 1px;
+  background: rgb(40, 39, 47);
+  box-shadow: rgb(40, 39, 47);
+}
+main .container form .alternativo-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  font-size: 16px;
+}
+main .container form .alternativo-two span {
+  align-self: center;
+  margin-right: 24px;
+}
+main .container form .alternativo-two a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(41, 41, 46);
+  border-radius: 5px;
+  height: 50px;
+  width: 60%;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+main .container form .alternativo-two svg {
+  margin: 10px;
+  fill: rgb(102, 66, 186);
+}
+
+/*# sourceMappingURL=styles.css.map */
